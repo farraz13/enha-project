@@ -1,5 +1,5 @@
 import Hasil from "./Hasil";
 import ListCategories from "./ListCategories";
 import NavComps from "./NavComps";
-
-export {Hasil, ListCategories, NavComps}
+import Menus from './Menus'
+export {Hasil, ListCategories, NavComps, Menus}

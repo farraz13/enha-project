@@ -1,5 +1,5 @@
 import { Col, Container } from "react-bootstrap";
-import { Hasil, ListCategories, NavComps } from "./Components/index";
+import { Hasil, ListCategories, Menus, NavComps } from "./Components/index";
 import { Row } from "react-bootstrap";
 import React, { Component } from "react";
 import { API_URL } from "./utils/constants";
@@ -29,6 +29,7 @@ export default class App extends Component {
 
   render() {
     console.log(this.state.menus);
+    const { menus } = this.state;
     return (
       <div className="App">
         <NavComps />
@@ -41,6 +42,18 @@ export default class App extends Component {
                   <strong>Daftar Produk</strong>
                 </h4>
                 <hr />
+                <Row>
+                  {menus &&
+                    menus.map((menu) => (
+                      <>
+                        <Menus
+                        key={menu.id}
+                        menu={menu}
+                        />
+                        <br />
+                      </>
+                    ))}
+                </Row>
               </Col>
               <Hasil />
             </Row>
