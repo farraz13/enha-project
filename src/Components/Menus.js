@@ -1,21 +1,23 @@
-import React from 'react'
-import { Col, Card } from 'react-bootstrap'
+import React from "react";
+import { Col, Card } from "react-bootstrap";
+import { numberWithCommas } from "../utils/util";
 
-const Menus = ({menu}) => {
+const Menus = ({ menu }) => {
+  console.log(menu);
   return (
-    <Col>
-    <Card>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    <Col md={4} xs={6} className="mt-3">
+      <Card className="shadow">
+        <Card.Img
+          variant="top"
+          src={"assets/images/makanan/bakso.jpg"}
+        />
+        <Card.Body>
+          <Card.Title>{menu.nama}</Card.Title>
+          <Card.Text> Rp. {numberWithCommas(menu.harga)}</Card.Text>
+        </Card.Body>
+      </Card>
     </Col>
-  )
-}
+  );
+};
 
-export default Menus
+export default Menus;
