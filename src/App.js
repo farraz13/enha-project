@@ -28,7 +28,6 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(this.state.menus);
     const { menus } = this.state;
     return (
       <div className="App">
