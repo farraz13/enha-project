@@ -12,3 +12,11 @@ code {
 .navbar{
   background-color: limegreen;
 }
+
+.categoryYangDipilih{
+  background-color: limegreen;
+  color: white;
+}
+.categoryYangDipilih:hover{
+  background-color: limegreen;
+}
