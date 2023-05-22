@@ -4,6 +4,7 @@ import { Row } from "react-bootstrap";
 import React, { Component } from "react";
 import { API_URL } from "./utils/constants";
 import axios from "axios";
+import './index.css';
 
 export default class App extends Component {
   constructor(props) {

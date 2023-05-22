@@ -13,10 +13,9 @@ code {
   background-color: limegreen;
 }
 
-.categoryYangDipilih{
+.category-aktif{
   background-color: limegreen;
-  color: white;
+  color:white
+
 }
-.categoryYangDipilih:hover{
-  background-color: limegreen;
-}
+
